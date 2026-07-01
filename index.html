@@ -1,34 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./src/output.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/output.css">
+  <link rel="stylesheet" href=".">
 </head>
-<body>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <h1>salam</h1>
-        <div role="alert" class="alert alert-success">
-  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-  </svg>
-  <span>Your purchase has been confirmed!</span>
+
+<body dir="rtl">
+
+  <!-- start menu -->
+  <div class="max-lg:collapse bg-base-200 lg:mb-48 shadow-sm w-full rounded-md flex">
+    <input id="navbar-1-toggle" class="peer hidden" type="checkbox" />
+    <label for="navbar-1-toggle" class="fixed inset-0 hidden max-lg:peer-checked:block"></label>
+    <div class="collapse-title navbar justify-around h-[108px]">
+      <div class="navbar-start w-[200px]">
+        <label for="navbar-1-toggle" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </label>
+        <img src="./assets/img/Logo.png" alt="">
+      </div>
+      <div class="navbar-center hidden lg:flex ">
+        <ul class="menu menu-horizontal px-1">
+          <li>
+            <details>
+              <summary class="text-[18px]">تورهای داخلی</summary>
+              <ul class="p-2 bg-base-100 w-40 z-1">
+                <li><button>Submenu 1</button></li>
+                <li><button>Submenu 2</button></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="text-[18px]">تور های خارجی</summary>
+              <ul class="p-2 bg-base-100 w-40 z-1">
+                <li><button>Submenu 1</button></li>
+                <li><button>Submenu 2</button></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="" class="text-[18px]">بیمه مسافرتی</a></li>
+          <li>
+            <details>
+              <summary class="text-[18px]">بیش تر</summary>
+              <ul class="p-2 bg-base-100 w-40 z-1">
+                <li><button>Submenu 1</button></li>
+                <li><button>Submenu 2</button></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </div>
+
+      <div class="navbar-end w-[400px] flex justify-around ">
+        <img src="./assets/img/search-normal.png" alt="">
+
+        <button
+          class="flex  border-[1px] border-solid border-blue-600 p-2 rounded-[8px] gap-1 text-blue-600">۰۲۱۷۰۷۰۹۷۹۷ <img
+            src="./assets/img/call-incoming.png" alt=""></button>
+        <button class="bg-blue-600 flex p-[10px] items-center gap-0.5 text-white rounded-[8px]"><img
+            src="./assets/img/login.png" alt="">ورود / ثبت نام </button>
+
+      </div>
+    </div>
+
+    <div class="collapse-content lg:hidden z-1">
+      <ul class="menu">
+        <li><button>Item 1</button></li>
+        <li>
+          <button>Parent</button>
+          <ul>
+            <li><button>Submenu 1</button></li>
+            <li><button>Submenu 2</button></li>
+          </ul>
+        </li>
+        <li><button>Item 3</button></li>
+      </ul>
+    </div>
+  </div>
+  <!-- end menu -->
+  <div class="baTripjet w-full h-[332px] absolute top-[110px]">
+    <img src="./assets/img/image.png" alt="" class="w-full h-full ">
+  </div>
+  <div class="Turs w-[85%] mx-auto justify-center bg-amber-400">
+<h1>تور های داخلی</h1>
+<h1>تور های خارجی</h1>
+<!-- start accordion -->
+ <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+  <input type="radio" name="my-accordion-2" checked="checked" />
+  <div class="collapse-title font-semibold">How do I create an account?</div>
+  <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
 </div>
-<div role="alert" class="alert alert-warning">
-  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-  </svg>
-  <span>Warning: Invalid email address!</span>
+<div class="collapse collapse-arrow bg-base-100 border border-base-300">
+  <input type="radio" name="my-accordion-2" />
+  <div class="collapse-title font-semibold">I forgot my password. What should I do?</div>
+  <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
 </div>
-    </body>
-    </html>
+<div class="collapse collapse-arrow bg-base-100 border border-base-300">
+  <input type="radio" name="my-accordion-2" />
+  <div class="collapse-title font-semibold">How do I update my profile information?</div>
+  <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+</div>
+<!-- end accordion -->
+  </div>
 </body>
+
 </html>
